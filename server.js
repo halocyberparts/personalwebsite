@@ -10,7 +10,7 @@ app.set ('view engine', 'handlebars');
 // setup express static public folder for css,js, and images
 app.use(express.static('public'));
 // setup enviroment variables
-const port = process.env.PORT || 3000;
+const port =  process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     res.render('home');
